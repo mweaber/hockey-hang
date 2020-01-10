@@ -1,0 +1,52 @@
+body {
+    background-image: url('/assets/css/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    padding: 3%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #6E8599;
+}
+
+.jumbotron{  
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #702f2f;
+    border-radius:45px;
+    margin-top: 15px;
+    padding: 3%;
+    width: 75%;
+}
+
+
+#container {
+    display: none;
+    height: 100%;
+    width: 100%;
+    padding: 6%;
+}
+
+#startbtn {
+    margin: auto;
+    height: 75px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius:45px;
+}
