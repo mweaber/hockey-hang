@@ -82,7 +82,10 @@ li {
     align-content: center;
     align-items: center;
     justify-content: center;
-    background-color: lightsteelblue;   
+    background-color: rgb(255, 255, 255);
+    border-radius:5px;
+    padding: 2px;
+    margin: 2px;   
 }
 
 li:hover{
@@ -105,4 +108,12 @@ li:hover{
     width: 75%;
     border: grey 3px;
     border-style: inset;
+}
+
+h5{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
 }
