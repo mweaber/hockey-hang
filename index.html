@@ -15,18 +15,63 @@
 <body>
     <nav class="navbar navbar-light">
         <h1 class="title">Hockey Hangman</h1>
-    </nav>
 
-    <div class="jumbotron">
-        <h1 class="display-4">Hello, hockey fan!</h1>
-        <p class="lead">Can you guess the players from your favorite team?.</p>
-        <hr class="my-4">
-        <p>Click the button below and pick your team to begin playing.</p>
-        <button id="startbtn" type="button" class="btn btn-dark btn-large" onclick='toggle()'>Drop the Puck</button>
+    </nav>
+    <button id="homebtn" class="btn btn-dark" onclick="toggleHome()">Home</button>
+    <div id="intro">
+        <div id='intro' class="jumbotron">
+            <h1 class="display-4">Hello, hockey fan!</h1>
+            <p class="lead">Can you guess the players from your favorite team?.</p>
+            <hr class="my-4">
+            <p>Click the button below and pick your team to begin playing.</p>
+            <button id="startbtn" type="button" class="btn btn-dark btn-large" onclick='toggleGame()'>Drop the
+                Puck</button>
+        </div>
     </div>
 
-    <div id="container">
-        <h2>Gameboard</h2>
+    <div id="gameBoard">
+        <div class="container">
+            <h2>Please Select A Team To Play!</h2>
+            <img src="" alt="Team Logo to Change on Hover over LI">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="westTeams">Western Conference</h3>
+                    <h5 class="pacificTeams">Pacific Division</h5>
+                    <ul class="WTeams">
+                        <li class="team">Anaheim Duck</li>
+                        <li class="team">Arizona Coyotes</li>
+                        <li class="team">Calgary Falmes</li>
+                        <li class="team">Edmonton Oilers</li>
+                        <li class="team">Los Angeles Kings</li>
+                        <li class="team">San Jose Sharks</li>
+                        <li class="team">Vancouver Canucks</li>
+                        <li class="team">Vegas Golden Knights</li>
+                    </ul>
+                    <br>
+                    <h5 class="centralTeams">Central Division</h5>
+                    <ul class="CTeams">
+                        <li class="team">Chicago Blackhawks</li>
+                        <li class="team">Colorado Avalanche</li>
+                        <li class="team">Dallas Stars</li>
+                        <li class="team">Minnesota Wild</li>
+                        <li class="team">Nashville Predators</li>
+                        <li class="team">St. Louis Blues</li>
+                        <li class="team">Winnipeg Jets</li>
+                    </ul>
+
+
+                </div>
+
+                <div class="col-6">
+                    <h3 class="eastTeams">Eastern Conference</h3>
+                    <ul class="ETeams">
+                        <li class="team">Florida Panther</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script type="text/javascript" src='/assets/js/js.js'></script>

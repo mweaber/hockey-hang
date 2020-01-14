@@ -1,17 +1,48 @@
-function toggle() {
-    var x = document.getElementById("container");
+function toggleGame() {
+    var x = document.getElementById("gameBoard");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
         x.style.display = "none";
     }
-    var y = document.getElementById("jumbotron");
-    if (y.style.display === "none") {
-        y.style.display = "block";
+
+    var y = document.getElementById('intro');
+    if (y.style.display === 'flex') {
+        y.style.display = 'none'
     } else {
-        y.style.display = "none";
+        y.style.display = 'flex'
     }
 
+    var z = document.getElementById('homebtn');
+    if (z.style.display === "none") {
+        z.style.display = "block";
+    } else {
+        z.style.display = "none";
+    }
 }
 
-toggle()
+function toggleHome() {
+    var x = document.getElementById("gameBoard");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+
+    var y = document.getElementById('intro');
+    if (y.style.display === 'none') {
+        y.style.display = 'flex'
+    } else {
+        y.style.display = 'none'
+    }
+
+    var z = document.getElementById('homebtn');
+    if (z.style.display === "block") {
+        z.style.display = "none";
+    } else {
+        z.style.display = "block";
+    }
+}
+
+toggleHome()
+toggleGame()
