@@ -16,8 +16,20 @@ nav {
     text-shadow: 2px 2px #ff00003f
 }
 
+.starter{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
 #homebtn{
-    display: none;  
+    display: none; 
+    align-items: center; 
+    justify-self: center;
 }
 
 #intro{
@@ -60,4 +72,37 @@ nav {
     flex-direction: column;
     flex-wrap: wrap;
     border-radius:45px;
+}
+
+li {
+    list-style-type: none;
+    border: grey 2px;
+    border-style: outset;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background-color: lightsteelblue;   
+}
+
+li:hover{
+    background-color: moccasin;
+    border-style: inset;
+}
+
+#gameBoard{
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background:rgba(255, 255, 255, 0.719);
+    border-radius:45px;
+    margin-top: 25px;
+    padding: 3%;
+    width: 75%;
+    border: grey 3px;
+    border-style: inset;
 }
