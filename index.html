@@ -13,13 +13,13 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light">
-        <h1 class="title">Hockey Hangman</h1>
+    <nav class="navbar navbar-light fixed">
+        <div class="banner">
+            <h1 class="title">Hockey Hangman</h1>
+        </div>
+        <div class="hdnbtn"><button id="homebtn" class="btn btn-dark starter" onclick="toggleHome()">Home</button></div>
 
     </nav>
-    <div class="starter">
-        <button id="homebtn" class="btn btn-dark" onclick="toggleHome()">Home</button>
-    </div>
 
     <div id="intro">
         <div id='intro' class="jumbotron">
@@ -35,31 +35,33 @@
     <div id="gameBoard">
         <div class="container">
             <h2>Please Select A Team To Play!</h2>
-            <img src="" alt="Team Logo to Change on Hover over LI">
+            <div class="logos">
+                <img id='mainlogo' src="/assets/img/nhl.png" alt="main">
+            </div>
             <div class="row">
                 <div class="col-6">
                     <h3 class="westTeams">Western Conference</h3>
                     <h5 class="division">Pacific Division</h5>
                     <ul class="teams">
-                        <li class="team">Anaheim Duck</li>
-                        <li class="team">Arizona Coyotes</li>
-                        <li class="team">Calgary Falmes</li>
-                        <li class="team">Edmonton Oilers</li>
-                        <li class="team">Los Angeles Kings</li>
-                        <li class="team">San Jose Sharks</li>
-                        <li class="team">Vancouver Canucks</li>
-                        <li class="team">Vegas Golden Knights</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="ducks">Anaheim Duck</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="coyotes">Arizona Coyotes</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="flames">Calgary Falmes</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="oilers">Edmonton Oilers</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="kings">Los Angeles Kings</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="sharks">San Jose Sharks</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="nucks">Vancouver Canucks</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="knights">Vegas Golden Knights</li>
                     </ul>
                     <br>
                     <h5 class="division">Central Division</h5>
                     <ul class="teams">
-                        <li class="team">Chicago Blackhawks</li>
-                        <li class="team">Colorado Avalanche</li>
-                        <li class="team">Dallas Stars</li>
-                        <li class="team">Minnesota Wild</li>
-                        <li class="team">Nashville Predators</li>
-                        <li class="team">St. Louis Blues</li>
-                        <li class="team">Winnipeg Jets</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="bhawks">Chicago Blackhawks</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="avalanche">Colorado Avalanche</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="stars">Dallas Stars</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="wild">Minnesota Wild</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="preds">Nashville Predators</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="blues">St. Louis Blues</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="jets">Winnipeg Jets</li>
                     </ul>
 
                 </div>
@@ -68,26 +70,26 @@
                     <h3 class="conference">Eastern Conference</h3>
                     <h5 class="division">Atlantic Division</h5>
                     <ul class="teams">
-                        <li class="team">Boston Bruins</li>
-                        <li class="team">Buffalo Sabres</li>
-                        <li class="team">Detroit Red Wings</li>
-                        <li class="team">Florida Panthers</li>
-                        <li class="team">Montreal Canadiens</li>
-                        <li class="team">Ottawa Senators</li>
-                        <li class="team">Tampa Bay Lightning</li>
-                        <li class="team">Toronto Maple Leafs</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="bruins">Boston Bruins</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="sabers">Buffalo Sabres</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="wings">Detroit Red Wings</li>
+                        <li onmouseover=picSwap() onmouseout=mainLogo() id="panthers">Florida Panthers</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="canadiens">Montreal Canadiens</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="sens">Ottawa Senators</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="bolts">Tampa Bay Lightning</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="leafs">Toronto Maple Leafs</li>
                     </ul>
                     <br>
                     <h5 class="division">Metropolitan Division</h5>
                     <ul class="teams">
-                        <li class="team">Carolina Hurricanes</li>
-                        <li class="team">Columbus Blue Jackets</li>
-                        <li class="team">New Jersey Devils</li>
-                        <li class="team">New York Islanders</li>
-                        <li class="team">New York Rangers</li>
-                        <li class="team">Philadelphia Flyers</li>
-                        <li class="team">Pittsburgh Penguins</li>
-                        <li class="team">Washington Capitals</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="canes">Carolina Hurricanes</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="jackets">Columbus Blue Jackets</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="devils">New Jersey Devils</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="isles">New York Islanders</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="rangers">New York Rangers</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="flyers">Philadelphia Flyers</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="pens">Pittsburgh Penguins</li>
+                        <li onmouseout=mainLogo() onmouseover=picSwap() id="caps">Washington Capitals</li>
                     </ul>
 
                 </div>

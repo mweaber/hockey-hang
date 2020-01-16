@@ -44,5 +44,26 @@ function toggleHome() {
     }
 }
 
+function changeLogo() {
+  document.getElementById("mainlogo").addEventListener("mouseover", picSwap);
+  document.getElementById("mainlogo").addEventListener("onmouseout", mainLogo);  
+}
+
+
+function picSwap() {
+    let newImg = document.getElementById('mainlogo');
+    newImg.src= `/assets/img/${event.target.id}.png`
+    console.log(event.target.id);
+}
+
+function mainLogo() {
+    let newImg = document.getElementById('mainlogo');
+    newImg.src='/assets/img/nhl.png'
+}
+
+
+
+
 toggleHome()
 toggleGame()
+changeLogo()

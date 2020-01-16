@@ -16,7 +16,7 @@ nav {
     text-shadow: 2px 2px #ff00003f
 }
 
-.starter{
+.starter {
     display: flex;
     align-content: center;
     align-items: center;
@@ -26,33 +26,32 @@ nav {
     padding-top: 15px;
 }
 
-#homebtn{
-    display: none; 
-    align-items: center; 
+#homebtn {
+    display: none;
+    align-items: center;
     justify-self: center;
 }
 
-#intro{
+#intro {
     display: flex;
 }
 
-.jumbotron{  
-    margin: auto; 
+.jumbotron {
+    margin: auto;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    background:rgba(255, 255, 255, 0.719);
-    border-radius:45px;
+    background: rgba(255, 255, 255, 0.719);
+    border-radius: 45px;
     margin-top: 25px;
     padding: 3%;
     width: 75%;
     border: grey 3px;
     border-style: inset;
 }
-
 
 #container {
     display: none;
@@ -71,7 +70,20 @@ nav {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    border-radius:45px;
+    border-radius: 45px;
+}
+
+#mainlogo {
+    margin:auto;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
 }
 
 li {
@@ -82,27 +94,33 @@ li {
     align-content: center;
     align-items: center;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
-    border-radius:5px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
     padding: 2px;
-    margin: 2px;   
+    margin: 2px;
 }
 
-li:hover{
+li:hover {
     background-color: moccasin;
     border-style: inset;
 }
 
-#gameBoard{
-    margin: auto; 
+.logos{
+    height: 250px;
+    width: 250px;
+}
+
+
+#gameBoard {
+    margin: auto;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    background:rgba(255, 255, 255, 0.719);
-    border-radius:45px;
+    background: rgba(255, 255, 255, 0.719);
+    border-radius: 45px;
     margin-top: 25px;
     padding: 3%;
     width: 75%;
@@ -110,10 +128,9 @@ li:hover{
     border-style: inset;
 }
 
-h5{
+h5 {
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-
 }
